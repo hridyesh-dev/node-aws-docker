@@ -24,7 +24,7 @@ jobs:
     runs-on: self-hosted
     steps: 
       - name: Pull Image From Docker Hub 
-        run: docker pull hridyesh/nodejs-app:latest
+        run: docker pull hri03/nodejs-app:latest
       - name: Delete Old Containers if any
         run:  docker rm -f nodejs-app-container
       - name: Run docker container
