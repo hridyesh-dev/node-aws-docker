@@ -14,9 +14,9 @@ jobs:
       - name: Login To Docker Hub 
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: Build Docker Image
-        run: docker build -t  hridyesh/nodejs-app . 
+        run: docker build -t  hri03/nodejs-app . 
       - name: Build Docker Image to DockerHub
-        run: docker push   hridyesh/nodejs-app:latest 
+        run: docker push   hri03/nodejs-app:latest 
 
   #once image is built run it on ec2 
   deploy:
